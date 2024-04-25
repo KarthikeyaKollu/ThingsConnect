@@ -1,5 +1,6 @@
 import React, { useEffect, useRef,useState } from 'react';
 import {Accordion, AccordionItem,Avatar} from "@nextui-org/react";
+
 import animationData from '../Assets/walk.json';
 import animationData1 from '../Assets/exercise.json';
 import animationData2 from '../Assets/water.json';

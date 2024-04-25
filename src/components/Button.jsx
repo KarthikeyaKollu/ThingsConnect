@@ -1,3 +1,4 @@
+import {Button} from "@nextui-org/react";
 import React, { useEffect, useRef,useState } from 'react';
 import styled from 'styled-components'
 import Lottie from 'lottie-web';
@@ -27,7 +28,7 @@ const LottieAnimation = ({ autoplay, width, height }) => {
   return <div ref={animationContainer} style={{ width, height }} />;
 };
 
-export const Button = () => {
+export const Button1 = () => {
 
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
 
@@ -41,10 +42,25 @@ export const Button = () => {
 
   return (
     <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
-      <Buttton onClick={handleAnimationClick} className='cursor-pointer' >  <LottieAnimation autoplay={isAnimationPlaying} width="60px" height="60px" /> {!isAnimationPlaying?"Start Measuring":"Stop Measuring"} </Buttton>
+
+<Button color="primary" isLoading={isAnimationPlaying}   onClick={handleAnimationClick}  className='cursor-pointer'>
+  
+        {!isAnimationPlaying? "Start Measuring":"Stop Measuring"}
+    </Button>
+
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

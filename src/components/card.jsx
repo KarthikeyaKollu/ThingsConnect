@@ -125,9 +125,8 @@ export const Card = ({ title, value, timestamp, range }) => {
 
     return (
       <div  style={{ height: '20vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}   >
-        <CardContainer   >
+        <CardContainer >
 
-       
           <Title>
             <img src={pic} alt="" width="40px" height="40px" />
             {title}

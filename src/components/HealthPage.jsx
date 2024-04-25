@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card} from "./card"
-import { Button } from './Button'
+import { Button1 } from './Button'
 
 export const HealthPage = () => {
   return (
@@ -13,7 +13,7 @@ export const HealthPage = () => {
      
     </div>
 
-    <Button/>
+    <Button1/>
     </>
   )
 }

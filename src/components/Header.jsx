@@ -9,9 +9,9 @@ export const Headder = () => {
   const navigate = useNavigate();
   return (
     <div>
-     <HeadderStyle> 
+     <HeadderStyle className='shadow-lg'> 
         
-      <span><Link to="/">SmartConnect</Link></span>
+      <span><Link to="/">ThingsConnect</Link></span>
 
       <Link to=""><NotificationsIcon color="primary" /></Link>
   

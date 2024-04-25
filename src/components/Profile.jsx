@@ -63,7 +63,7 @@ export function Profile() {
   };
 
   return (
-    <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+    <div className="flex w-full flex-wrap md:flex-nowrap gap-4 p-6">
       <Input isDisabled={!isEditing} type="text" label="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
       <Input isDisabled={!isEditing} type="number" label="Age" value={age} onChange={(e) => setAge(e.target.value)} />
       <Input isDisabled={!isEditing} type="number" label="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />

@@ -1,7 +1,6 @@
 import React from "react";
 import {Card, CardFooter, Image, Button, Link} from "@nextui-org/react";
 import { useNavigate } from 'react-router-dom';
-
 export function Device({title,image,route,button}) {
 
   const navigate = useNavigate();  

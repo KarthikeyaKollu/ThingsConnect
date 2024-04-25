@@ -80,8 +80,8 @@ export function Wrapper() {
     
     <div className="p-6 grid grid-cols-2 gap-5">
     <Device title="Smart Watch" image={smartwatch} route="/health" button="See Device" />
-    <Device title="Medical Dispenser" image={medical} button="See Device" />
-    <Device title="Home Automation" image={homeautomation} button="See Device" />
+    <Device title="Medical Dispenser" image={medical} button="See Device" route="/schedule" />
+    <Device title="Home Automation" image={homeautomation} button="See Device" route="/Lights" />
     </div>
     <Text/>
     <div className="p-6 pb-20 grid grid-cols-2 gap-5">
