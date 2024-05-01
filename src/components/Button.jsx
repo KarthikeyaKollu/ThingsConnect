@@ -35,15 +35,15 @@ export const Button1 = () => {
   const handleAnimationClick = () => {
     setIsAnimationPlaying(!isAnimationPlaying);
     if(!isAnimationPlaying){
-      writeData("/Data/status","true")
+      writeData("/UserData/status","true")
     }
-    else writeData("/Data/status","false")
+    else writeData("/UserData/status","false")
   };
 
   return (
     <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
 
-<Button color="primary" isLoading={isAnimationPlaying}   onClick={handleAnimationClick}  className='cursor-pointer'>
+<Button color="primary"    onClick={handleAnimationClick}  className='cursor-pointer'>
   
         {!isAnimationPlaying? "Start Measuring":"Stop Measuring"}
     </Button>

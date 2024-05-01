@@ -83,7 +83,7 @@ export function Wrapper() {
     <Device title="Medical Dispenser" image={medical} button="See Device" route="/schedule" />
     <Device title="Home Automation" image={homeautomation} button="See Device" route="/Lights" />
     </div>
-    <Text/>
+    <Text text={"Explore more ...."}/>
     <div className="p-6 pb-20 grid grid-cols-2 gap-5">
     <Device title="Earbuds" image={airpods} button="Connect" />
     </div>
@@ -107,11 +107,11 @@ const Cards=styled.div`
     margin-top: -10px;
 `
 
-const Text=()=>{
+export const Text=({text})=>{
 
   return(
     <TextDiv>
-      <span>Explore More...</span>
+      <span>{text}</span>
       <ExploreIcon fontSize="medium"/>
     </TextDiv>
 
